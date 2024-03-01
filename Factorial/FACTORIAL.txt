@@ -1,0 +1,25 @@
+package PRIMEROS_EJERCICIOS;
+
+import java.util.Scanner;
+
+public class EJERCICIO_NUMERO_29 {
+
+	public static void main(String[] args) {
+
+		System.out.println("CALCULAR EL DE UN NUMERO FACTORIAL");
+		Scanner leer = new Scanner(System.in);
+
+		// Declaracion de Variables
+
+		int n, i, r = 1;
+		// Leer el Numero entero N,
+		System.out.print("INGRESE EL NUMERO: ");
+		n = leer.nextInt();
+		// Ciclo Para
+		for (i = 1; i <= n; i++) {
+
+			r = r * i;
+		}
+		System.out.print("El factorial de " + n + " es: " + r);
+	}
+}
